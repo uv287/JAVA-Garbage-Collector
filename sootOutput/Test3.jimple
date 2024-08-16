@@ -1,0 +1,101 @@
+public class Test3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        Test3 r0;
+
+        r0 := @this: Test3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        Test3Node $r0, $r1, $r2, $r3, $r4, $r5, $r6, $r7, $r8, $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r17;
+        java.lang.String[] r18;
+
+        r18 := @parameter0: java.lang.String[];
+
+        $r0 = new Test3Node;
+
+        specialinvoke $r0.<Test3Node: void <init>()>();
+
+        $r1 = new Test3Node;
+
+        specialinvoke $r1.<Test3Node: void <init>()>();
+
+        $r0.<Test3Node: Test3Node f> = $r1;
+
+        $r3 = $r0.<Test3Node: Test3Node f>;
+
+        $r2 = new Test3Node;
+
+        specialinvoke $r2.<Test3Node: void <init>()>();
+
+        $r3.<Test3Node: Test3Node f> = $r2;
+
+        $r4 = $r0.<Test3Node: Test3Node f>;
+
+        $r6 = $r4.<Test3Node: Test3Node f>;
+
+        $r5 = new Test3Node;
+
+        specialinvoke $r5.<Test3Node: void <init>()>();
+
+        $r6.<Test3Node: Test3Node f> = $r5;
+
+        $r7 = $r0.<Test3Node: Test3Node f>;
+
+        $r8 = $r7.<Test3Node: Test3Node f>;
+
+        $r10 = $r8.<Test3Node: Test3Node f>;
+
+        $r9 = new Test3Node;
+
+        specialinvoke $r9.<Test3Node: void <init>()>();
+
+        $r10.<Test3Node: Test3Node f> = $r9;
+
+        $r11 = $r0.<Test3Node: Test3Node f>;
+
+        $r12 = $r11.<Test3Node: Test3Node f>;
+
+        $r13 = $r12.<Test3Node: Test3Node f>;
+
+        $r15 = $r13.<Test3Node: Test3Node f>;
+
+        $r14 = new Test3Node;
+
+        specialinvoke $r14.<Test3Node: void <init>()>();
+
+        $r15.<Test3Node: Test3Node f> = $r14;
+
+        staticinvoke <Test3: Test3Node foo(Test3Node)>($r0);
+
+        $r17 = new Test3Node;
+
+        specialinvoke $r17.<Test3Node: void <init>()>();
+
+        return;
+    }
+
+    static Test3Node foo(Test3Node)
+    {
+        Test3Node r0;
+
+        r0 := @parameter0: Test3Node;
+
+     label1:
+        if r0 == null goto label2;
+
+        r0 = r0.<Test3Node: Test3Node f>;
+
+        goto label1;
+
+     label2:
+        return r0;
+    }
+}

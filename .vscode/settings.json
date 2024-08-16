@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "sootclasses-trunk-jar-with-dependencies.jar"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
+}
